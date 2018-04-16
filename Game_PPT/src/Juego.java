@@ -1,9 +1,14 @@
+
+import java.io.File;
+import java.io.FileWriter;
+
 public class Juego {
      Jugador jugador1 ,jugador2; 
 
     public Juego() {
         jugador1 = new Jugador();
-        jugador2 = new Jugador();   
+        jugador2 = new Jugador();
+        
     }
     
     
@@ -15,7 +20,7 @@ public class Juego {
                         || (num.equals("Tijera") && num2.equals("Tijera"))) 
             { 
                 res="empate";
-                System.out.println("\nempate\n"); 
+                System.out.println("\n empate \n"); 
             } 
             else 
             { 
@@ -35,4 +40,5 @@ public class Juego {
             }
             return  res;
             }      
+    
     }
